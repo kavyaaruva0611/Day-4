@@ -1,0 +1,35 @@
+Task: Configuring and testing firewall rules to allow and block traffic.
+Tools Used: Windows Firewall Defender, Cmd Prompt.
+Procedure:
+Step:1- Opened Firewall Defender from the search bar and checked for inbound and outbound basic configuration setup.
+
+Step:2- Checked for the basic firewall rules categorization, which includes:
+        * Direction: Inbound or Outbound Rules.
+        * Name of the Rule, status(Enabled/ Disabled), Action(Allow/ Block).
+        * Ports, ipaddress(local or Remote), Protocols.
+
+Step:3- Created a rule with name New Rule in Inbound Rules to check how the Firewall Works.
+
+Step:4- Following steps involved to create a new Rule is mentioned below:
+        * Rule Type: Helps to choose the rule which is to be applied either on a Program/ Port/ Predefined/ Custom- Here I choose port.
+        * Protocol and Ports: Here we can choose where we are applying it to TCP/ UDP protocol and is it applied to all local ports/ specific port.
+        * Action: Allow/ Block connection.
+        * Profile: Applies to a Domain/ Private/ Public profile or can choose ALL.
+        * Name: User defined Name for the Rule Created.
+
+Step:5- Created Inbound Rule for TCP Port-443 to check if the traffic is blocked from Remote device.
+
+How it Works?
+Firewall either Hardware or Software based tool inspect data packets, comparing them to predefined rules to determine whether to allow or block them. 
+
+Observation:
+When the rule was enabled, tried to search for the connection through chrome with the help of ipaddress, but I was unable to open the site as it states" THIS SITE CAN"T BE REACHED"
+
+Precautions:
+Firewall rules should be designed to allow only the necessary traffic while blocking everything else by default. 
+Need to update Firewall Rules, Regular Audits must be dome.
+Implement a comprehensive logging and alert mechanism.
+
+
+
+
